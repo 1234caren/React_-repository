@@ -4,6 +4,7 @@ import Agregar from './componentes/Agregar';
 import Lista from './componentes/Lista';
 import Error from './componentes/Error';
 import FormularioClima from './componentes/FormularioClima';
+import Router from './componentes/Router';
 
 class App extends Component {
   state ={
@@ -117,6 +118,7 @@ class App extends Component {
           <Header
             titulo={'Sistemas de turnos'}
           />
+          <Router/>
           <div className="row">
             <div className="col-md-12">
               <Agregar
