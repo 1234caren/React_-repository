@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
 import uuid from 'uuid';
 import logo from '../images/logo.png';
-import App from '../css/App.css';
-
 export default class Class extends Component {
     //refs
     nombreMascotaRef = React.createRef();

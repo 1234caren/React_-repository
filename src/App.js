@@ -113,12 +113,14 @@ class App extends Component {
       resultado = <Error mensaje={'Los campos son obligatorios'}/>
     }
     return (
-      <div>
+      <React.Fragment>
+        <Router/>
         <div className="container">
           <Header
             titulo={'Sistemas de turnos'}
           />
-          <Router/>
+          
+          
           <div className="row">
             <div className="col-md-12">
               <Agregar
@@ -143,7 +145,7 @@ class App extends Component {
             </div>
         </div>
 
-      </div>
+      </React.Fragment>
 
     );
   }
