@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import clientesDatos from '../static/datos.json';
 import Cliente from './Cliente';
+import Titulo from './Titulo';
 
 export default class Clientes extends Component {
     state = {
@@ -9,8 +10,10 @@ export default class Clientes extends Component {
 
     render() {
         return (
-            <div className="container-clientes">
-                <h4>Informacion de Clientes</h4>
+            <div className="container-customers">
+                <Titulo
+                    titulo={'Informacion de clientes'}       
+                />
                 <ul>
                     {this.state.datos.map(cliente => (
                         <li>

@@ -36,7 +36,7 @@ export default class Class extends Component {
         
                 //se envia el objeto hacia el padre para actualizar el state
                 this.props.crearCita(nuevaCita);
-        
+                console.log(nuevaCita)
                 //Reiniciar el formulario
                 e.currentTarget.reset();
 
@@ -61,7 +61,7 @@ export default class Class extends Component {
                 <img src={logo} className="Applogo" alt="logo" />
                 <div className="container">
                     <p className="text-center">Bienvenido al Sistema de Turnos Online de Animalia.</p>
-                    <p className="text-center">Desde acá podés administar los turnos, también podés Consultar o Cancelar los turnos que se hayan solicitado mediante este Sistema de Turnos Online.</p>
+                    <p className="text-center">Desde acá podés administar los turnos, también podés Consultar o Cancelar los turnos que se hayan solicitado mediante este Sistema.</p>
 
                 </div>
                 

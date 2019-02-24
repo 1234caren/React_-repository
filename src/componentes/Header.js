@@ -1,11 +1,22 @@
-import React from 'react';
+import React,{Component} from 'react';
+import logo from '../images/MyVete.jpg';
+import {Link} from 'react-router-dom';
+import Navbar from './Navbar';
+export default class Header extends Component {
 
-const Header = props => {
-    return(
-        <header>
-            <h4 className="text-center">{props.titulo}</h4>
-        </header>
-    )
+    render() {
+        return (
+            <div>
+        <div className="home">
+            <div>
+                <Link to={'/'}>
+                        <img src={logo} alt='logo'/>
+                </Link>
+            </div>
+        </div>
+            <Navbar/>
+                
+        </div>
+        );
+    }
 }
-
-export default Header;
