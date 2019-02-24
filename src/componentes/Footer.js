@@ -7,7 +7,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer className="page-footer">
-                <div className="footer-top">
+                <div className="footer-top center">
                    <p>Conectate con nosotros</p>
                 </div>
                 <div className="container">
