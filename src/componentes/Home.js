@@ -2,11 +2,13 @@ import React,{Component} from 'react';
 import calendario from '../images/evento.png';
 import sol from '../images/sol.png';
 import reporte from '../images/report.png';
+import Clima from './Clima';
 export default class Home extends Component {
 
     render() {
         return (
             <div className="">
+            <Clima/>
                 <div className="header-img center">
                     <div className="container-text">
                         <h3>SISTEMA PARA VETERINARIAS</h3>
