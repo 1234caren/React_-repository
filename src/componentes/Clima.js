@@ -54,7 +54,7 @@ export default class Clima extends Component {
       const respuesta = await url.json();
       console.log(url);
       console.log(respuesta);
-  
+      
   
       // query con fetch api, caracteristica de e6
       //la respuesta se puede retornar como json o como texto en este caso es con json
@@ -66,6 +66,8 @@ export default class Clima extends Component {
         let resultado;
         if(error){
           resultado = <Error mensaje={'Los campos son obligatorios'}/>
+        }else{
+
         }
         return (
         <div>
@@ -74,7 +76,6 @@ export default class Clima extends Component {
                   datosConsulta={this.datosConsulta}
                 />
                 {resultado}
-                hola
             </div>
         </div>
         );
