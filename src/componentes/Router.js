@@ -8,9 +8,9 @@ export default class Router extends Component {
     render() {
         return (
             <Switch>
+                <Route exact path="/" component={Home} />
                 <Route path="/clientes" component={Clientes} />
                 <Route path="/agregar" component={Turnos} />
-                <Route path="/" component={Home} />
                 <Route path="/clima" component={Clima} />
             </Switch>
         );

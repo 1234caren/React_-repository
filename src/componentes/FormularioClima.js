@@ -17,7 +17,7 @@ export default class FormularioClima extends Component {
         //enviar por props (comunicandose con el componente padre)
         this.props.datosConsulta(respuesta);
 
-        //resetear el form
+        //resetear el formulario
 
     }
     render() {
